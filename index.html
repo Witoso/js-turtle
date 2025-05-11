@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Javascript Turtle</title>
-      <link type="text/css" rel="stylesheet" href="turtle.css" />
-      <meta name="color-scheme" content="light dark" />
-   </head>
-   <body>
-      <div id="wrap">
-         <h1>Javascript Turtle Graphics</h1>
-         <div id="leftcolumn">
-            <h4>Language API Reference</h4>
-            <code>
+
+<head>
+	<title>Javascript Turtle</title>
+	<link type="text/css" rel="stylesheet" href="assets/turtle.css" />
+	<meta name="color-scheme" content="light dark" />
+</head>
+
+<body>
+	<div id="wrap">
+		<h1>Javascript Turtle Graphics</h1>
+		<div id="leftcolumn">
+			<h4>Language API Reference</h4>
+			<code>
               forward(distance) <br/>
               right(angle) <br/>
               left(angle) <br/>
@@ -37,21 +39,21 @@
               animate(action,ms) <br/>
               range(start, end, step=1) <br/>
             </code>
-         </div> <!-- leftcolumn -->
-         <div id="midcolumn">
-            <h4>Canvas</h4>
-            <canvas id="turtlecanvas" width="300" height="300"></canvas>
-            <canvas id="imagecanvas" width="300" height="300" style="display:none"></canvas>
-            <h4>Command</h4>
-               <input type="text" id="command" placeholder="use arrow keys to navigate history" autocapitalize="off"/>
-      <br/>
-      <button id="runButton">Run</button>
-      <button id="resetButton">Reset</button>
+		</div> <!-- leftcolumn -->
+		<div id="midcolumn">
+			<h4>Canvas</h4>
+			<canvas id="turtlecanvas" width="300" height="300"></canvas>
+			<canvas id="imagecanvas" width="300" height="300" style="display:none"></canvas>
+			<h4>Command</h4>
+			<input type="text" id="command" placeholder="use arrow keys to navigate history" autocapitalize="off" />
+			<br />
+			<button id="runButton">Run</button>
+			<button id="resetButton">Reset</button>
 
-         </div> <!-- midcolumn -->
-         <div id="rightcolumn">
-            <h4>Definitions</h4>
-            <textarea id="definitions" rows="30">
+		</div> <!-- midcolumn -->
+		<div id="rightcolumn">
+			<h4>Definitions</h4>
+			<textarea id="definitions" rows="30">
 // Define helper functions here.
 // For example:
 
@@ -71,8 +73,10 @@ function demo() {
    }
 }
             </textarea>
-         </div> <!-- rightcolumn -->
-      </div> <!-- wrap-->
-      <script type="text/javascript" src="turtle.js"></script>
-   </body>
+		</div> <!-- rightcolumn -->
+	</div> <!-- wrap-->
+	<script type="module" src="./src/main.js"></script>
+	<script type="module" src="./src/api.js"></script>
+</body>
+
 </html>
